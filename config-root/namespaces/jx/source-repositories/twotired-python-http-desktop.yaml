@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: twotired
+    provider: github
+    repository: python-http-desktop
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: twotired-python-http-desktop
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/twotired/python-http-desktop.git
+  org: twotired
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: python-http-desktop
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/twotired/python-http-desktop
