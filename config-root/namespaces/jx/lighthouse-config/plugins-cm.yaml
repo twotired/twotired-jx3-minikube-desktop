@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - twotired/go-http-desktop
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - twotired/python-http-desktop
       require_self_approval: true
     cat: {}
@@ -24,6 +28,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      twotired/go-http-desktop:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       twotired/python-http-desktop:
       - approve
       - assign
@@ -68,6 +88,9 @@ data:
     triggers:
     - repos:
       - twotired/twotired-jx3-minikube-desktop
+      trusted_org: todo
+    - repos:
+      - twotired/go-http-desktop
       trusted_org: todo
     - repos:
       - twotired/python-http-desktop

@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        twotired/go-http-desktop: true
         twotired/python-http-desktop: true
         twotired/twotired-jx3-minikube-desktop: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        twotired/go-http-desktop: merge
         twotired/python-http-desktop: merge
         twotired/twotired-jx3-minikube-desktop: merge
       queries:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - twotired/twotired-jx3-minikube-desktop
+        - twotired/go-http-desktop
         - twotired/python-http-desktop
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - twotired/twotired-jx3-minikube-desktop
+        - twotired/go-http-desktop
         - twotired/python-http-desktop
       target_url: http://dashboard-jx.192.168.39.211.nip.io
 kind: ConfigMap
