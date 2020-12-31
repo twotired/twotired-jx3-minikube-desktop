@@ -5,7 +5,7 @@ metadata:
   name: go-http-desktop-go-http-desktop
   labels:
     draft: draft-app
-    chart: "go-http-desktop-0.0.2"
+    chart: "go-http-desktop-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: go-http-desktop-go-http-desktop
       containers:
         - name: go-http-desktop
-          image: "10.111.107.146/twotired/go-http-desktop:0.0.2"
+          image: "10.111.107.146/twotired/go-http-desktop:0.0.3"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.2
+              value: 0.0.3
           envFrom: null
           ports:
             - containerPort: 8080
