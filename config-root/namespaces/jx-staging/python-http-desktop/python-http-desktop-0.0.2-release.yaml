@@ -1,0 +1,39 @@
+# Source: python-http-desktop/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-31T05:34:04Z"
+  deletionTimestamp: null
+  name: 'python-http-desktop-0.0.2'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.2
+      sha: fb4bbd45f3b8d7b384812e0bf1cf5ceb88885548
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: fcd51d429c6cf8131899fb25696237be08f1a91e
+  gitHttpUrl: https://github.com/twotired/python-http-desktop
+  gitOwner: twotired
+  gitRepository: python-http-desktop
+  name: 'python-http-desktop'
+  releaseNotesURL: https://github.com/twotired/python-http-desktop/releases/tag/v0.0.2
+  version: v0.0.2
+status: {}

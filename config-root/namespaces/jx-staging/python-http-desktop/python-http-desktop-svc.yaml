@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: python-http-desktop
   labels:
-    chart: "python-http-desktop-0.0.1"
+    chart: "python-http-desktop-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
