@@ -19,7 +19,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: 192.168.39.51.nip.io
+    domain: 192.168.39.205.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
