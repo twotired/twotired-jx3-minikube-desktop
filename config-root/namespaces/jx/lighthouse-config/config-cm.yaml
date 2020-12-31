@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        twotired/python-http-desktop: true
         twotired/twotired-jx3-minikube-desktop: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        twotired/python-http-desktop: merge
         twotired/twotired-jx3-minikube-desktop: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - twotired/twotired-jx3-minikube-desktop
+        - twotired/python-http-desktop
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - twotired/twotired-jx3-minikube-desktop
+        - twotired/python-http-desktop
       target_url: http://dashboard-jx.192.168.39.211.nip.io
 kind: ConfigMap
 metadata:
