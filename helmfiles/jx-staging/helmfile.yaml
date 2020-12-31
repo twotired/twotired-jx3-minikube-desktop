@@ -14,7 +14,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: dev/python-http-desktop
-  version: 0.0.1
+  version: 0.0.2
   name: python-http-desktop
   values:
   - jx-values.yaml
