@@ -8,7 +8,9 @@ spec:
   pipelineSpec:
     tasks:
     - name: from-build-pack
-      resources: {}
+      resources:
+            requests:
+              cpu: 1
       taskSpec:
         metadata: {}
         stepTemplate:
@@ -20,7 +22,7 @@ spec:
           name: ""
           resources:
             requests:
-              cpu: 400m
+              cpu: 1
               memory: 512Mi
           workingDir: /workspace/source
         steps:
@@ -30,7 +32,9 @@ spec:
           - make
           image: gcr.io/jenkinsxio/jx-boot:3.1.77
           name: make-pr
-          resources: {}
+          resources:
+            requests:
+              cpu: 1
   podTemplate: {}
   serviceAccountName: tekton-bot
   timeout: 240h0m0s

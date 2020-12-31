@@ -16,7 +16,9 @@ spec:
       params:
       - name: revision
         value: $(params.revision)
-      resources: {}
+      resources:
+            requests:
+              cpu: 1
       taskSpec:
         metadata: {}
         params:
@@ -35,7 +37,7 @@ spec:
           name: ""
           resources:
             requests:
-              cpu: 400m
+              cpu: 1
               memory: 512Mi
           workingDir: /workspace/source
         steps:
