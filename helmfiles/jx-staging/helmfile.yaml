@@ -13,5 +13,10 @@ releases:
   name: go-http-desktop
   values:
   - jx-values.yaml
+- chart: dev/python-http-desktop
+  version: 0.0.1
+  name: python-http-desktop
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

@@ -1,0 +1,18 @@
+# Source: python-http-desktop/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: python-http-desktop
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: python-http-desktop
+              servicePort: 80
+      host: python-http-desktop-jx-staging.192.168.39.211.nip.io
