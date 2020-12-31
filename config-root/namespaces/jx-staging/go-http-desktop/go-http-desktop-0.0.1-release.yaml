@@ -1,0 +1,59 @@
+# Source: go-http-desktop/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-31T03:54:01Z"
+  deletionTimestamp: null
+  name: 'go-http-desktop-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: ec60fd76341caa0690c85e8845affed60a521b65
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 97600a236e6d57f2e0b0d689aa5710a41010f6db
+    - author:
+        email: spinmaster@gmail.com
+        name: twotired
+      branch: master
+      committer:
+        email: spinmaster@gmail.com
+        name: twotired
+      message: |
+        fixing
+      sha: f61a3d014c5df12c05ea8d4a0fc9bbe2bd85b607
+    - author:
+        email: spinmaster@gmail.com
+        name: twotired
+      branch: master
+      committer:
+        email: spinmaster@gmail.com
+        name: twotired
+      message: |
+        chore: Jenkins X build pack
+      sha: 619264a715d6f4786134e01355f41df4201913f9
+  gitHttpUrl: https://github.com/twotired/go-http-desktop
+  gitOwner: twotired
+  gitRepository: go-http-desktop
+  name: 'go-http-desktop'
+  releaseNotesURL: https://github.com/twotired/go-http-desktop/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
