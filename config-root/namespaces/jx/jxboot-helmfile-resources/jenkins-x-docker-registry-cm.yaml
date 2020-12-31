@@ -10,4 +10,4 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   kaniko.flags: "--insecure --snapshotMode=time --cache=true"
-  docker.registry: docker-registry
+  docker.registry: 10.111.107.146
