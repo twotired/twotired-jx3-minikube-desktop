@@ -8,5 +8,6 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: go-http-desktop
     - name: python-http-desktop
     scheduler: in-repo
