@@ -28,18 +28,23 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.111.107.146
   environments:
   - key: dev
+    owner: twotired
+    repository: twotired-jx3-minikube-desktop
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: 192.168.39.211.nip.io
     externalDNS: false
     namespaceSubDomain: -tekton-pipelines.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: twotired
   repository: bucketrepo
   secretStorage: vault
   vault: {}
