@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-31T07:23:20Z"
+  creationTimestamp: "2020-12-31T07:47:39Z"
   deletionTimestamp: null
-  name: 'go-http-desktop-0.0.2'
+  name: 'go-http-desktop-0.0.3'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.2
-      sha: d357a26ca7023fc5a428fc53fc8b8ff23060532f
+        chore: release 0.0.3
+      sha: 847b3ba00819dea2c97c23da81be31c5d3c1fbea
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,23 +29,31 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: f63602dd7dd61acb83a054b429540e588f30c974
+      sha: ac725edae09c7836cb522b922ad1e73457794933
     - author:
         email: spinmaster@gmail.com
-        name: Jason Wells
+        name: twotired
       branch: master
       committer:
-        email: noreply@github.com
-        name: GitHub
-      message: |-
-        Update README.md
-
-        asdfasdf
-      sha: bd196a52ec1e5d5fd4e9853f1613beeb1e51701b
+        email: spinmaster@gmail.com
+        name: twotired
+      message: |
+        asdf
+      sha: 3170c08e278c1f94bbe18c8956ccf988262978aa
+    - author:
+        email: spinmaster@gmail.com
+        name: twotired
+      branch: master
+      committer:
+        email: spinmaster@gmail.com
+        name: twotired
+      message: |
+        enhancing
+      sha: b6d15179bea18a5678f85eb9afb71711ae5ae2af
   gitHttpUrl: https://github.com/twotired/go-http-desktop
   gitOwner: twotired
   gitRepository: go-http-desktop
   name: 'go-http-desktop'
-  releaseNotesURL: https://github.com/twotired/go-http-desktop/releases/tag/v0.0.2
-  version: v0.0.2
+  releaseNotesURL: https://github.com/twotired/go-http-desktop/releases/tag/v0.0.3
+  version: v0.0.3
 status: {}

@@ -9,7 +9,7 @@ repositories:
   url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
 releases:
 - chart: dev/go-http-desktop
-  version: 0.0.2
+  version: 0.0.3
   name: go-http-desktop
   values:
   - jx-values.yaml
